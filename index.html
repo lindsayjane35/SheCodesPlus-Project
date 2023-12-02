@@ -3,40 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city.." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Los Angeles</h1>
-        <p>
-          Saturday 12:00, sunny
-          <br />
-          Humidity: 10%, Wind: 2mph
-        </p>
-      </div>
-      <div>☀️ 70°F</div>
-    </main>
-    <footer>
-      Coded by
-      <a href="https://github.com/lindsayjane35" target="_blank">
-        Lindsay Land</a
-      >, is open-sourced on
-      <a
-        href="https://github.com/lindsayjane35/SheCodesPlus-Project"
-        target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://lindsays-weather-app.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Los Angeles</h1>
+            <p class="weather-app-details">
+              Saturday 12:00, sunny
+              <br />
+              Humidity: <strong>10%</strong>, Wind: <strong>2mph</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">☀️</div>
+            <div class="weather-app-temperature">70</div>
+            <div class="weather-app-unit">°F</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/lindsayjane35" target="_blank">
+          Lindsay Land</a
+        >, is open-sourced on
+        <a
+          href="https://github.com/lindsayjane35/SheCodesPlus-Project"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://lindsays-weather-app.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
