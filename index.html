@@ -24,16 +24,17 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city" id="city">Los Angeles</h1>
+            <h1 class="weather-app-city" id="city"></h1>
             <p class="weather-app-details">
-              Saturday 12:00, sunny
+              <span id="time"></span>, <span id="description"></span>
               <br />
-              Humidity: <strong>10%</strong>, Wind: <strong>2mph</strong>
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="weather-app-temperature-container">
             <div class="weather-app-icon">☀️</div>
-            <div class="weather-app-temperature">70</div>
+            <div class="weather-app-temperature" id="temperature"></div>
             <div class="weather-app-unit">°F</div>
           </div>
         </div>
