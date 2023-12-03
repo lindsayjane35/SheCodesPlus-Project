@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
         </form>
@@ -22,7 +24,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">Los Angeles</h1>
+            <h1 class="weather-app-city" id="city">Los Angeles</h1>
             <p class="weather-app-details">
               Saturday 12:00, sunny
               <br />
@@ -52,5 +54,6 @@
         >
       </footer>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
