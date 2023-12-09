@@ -45,6 +45,7 @@ header {
   display: flex;
   justify-content: space-between;
   color: #d5f3f9;
+  font-family: "Titillium Web", sans-serif;
 }
 .weather-app-city {
   margin: 0;
@@ -82,6 +83,7 @@ header {
   justify-content: space-around;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .weather-forecast-date {
@@ -108,4 +110,8 @@ header {
 }
 .weather-forecast-temperature {
   padding: 0 10px;
+}
+footer {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
 }
